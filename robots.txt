@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://amirdev.org/sitemap.xml
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Allow: /
+
+# Bing AdsBot
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex Bot
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo Bot
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1

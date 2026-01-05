@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Ali - Professional Web Developer</title>
+  <meta name="description" content="Amir Ali - 18-year-old certified web developer specializing in responsive, user-friendly websites and modern web solutions.">
+  <meta name="keywords" content="web developer, frontend developer, HTML, CSS, JavaScript, React, Bootstrap, Pakistan, Islamabad">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/CV.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Glightbox (for portfolio) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
+  <link rel="stylesheet" href="assets/css/tresezation1style.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="loader"></div>
+      <div class="loading-text">Loading<span class="dots">...</span></div>
+    </div>
+  </div>
+
+  <!-- Cursor Effect -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Back to Top -->
+  <div class="back-to-top">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="logo-text">A<span class="logo-dot">.</span></span>
+          <span class="logo-name">Amir Ali</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          
+          <a href="#contact" class="btn-hire-me">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="particles" id="particles-js"></div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="hero-content">
+            <div class="badge animate__animated animate__pulse animate__infinite">
+              <span>👋 Welcome</span>
+            </div>
+            <h1 class="hero-title">
+              I'm <span class="text-gradient">Amir Ali</span>
+              <span class="typed-text" id="typed"></span>
+            </h1>
+            <p class="hero-description">
+              Certified web developer, creating modern, responsive websites that combine technical expertise with creative design.
+            </p>
+            <div class="hero-btns">
+              <a href="#contact" class="btn btn-primary">
+                <span>Get in Touch</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#portfolio" class="btn btn-outline">
+                <span>View Work</span>
+                <i class="bi bi-grid-3x3-gap"></i>
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <h3>10</h3>
+                <p>Projects</p>
+              </div>
+              <div class="stat">
+                <h3>15</h3>
+                <p>Happy Clients</p>
+              </div>
+              <div class="stat">
+                <h3>1+</h3>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <img src="assets/img/CV.jpg" alt="Amir Ali" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop'">
+              <div class="floating-badge experience">
+                <i class="bi bi-award"></i>
+                <span>Certified Developer</span>
+              </div>
+              <div class="floating-badge location">
+                <i class="bi bi-geo-alt"></i>
+                <span>Islamabad, PK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">About Me</span>
+        <h2 class="section-title">Get to Know <span class="text-gradient">Me</span></h2>
+        <p class="section-description">Combining medical knowledge with technical expertise to create innovative web solutions.</p>
+      </div>
+      
+      <div class="row gy-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-content">
+            <h3>Transforming Ideas into Digital Reality</h3>
+            <p>I am Amir Ali, an 18-year-old certified web developer based in Islamabad, Pakistan. Born on February 5, 2008, I combine my passion for technology with a unique perspective gained from my medical background.</p>
+            
+            <div class="about-info">
+              <div class="info-item">
+                <i class="bi bi-person-badge"></i>
+                <div>
+                  <h4>Name</h4>
+                  <p>Amir Ali</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>amiraofficial076@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Islamabad, Pakistan</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+92 308 8469255</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="assets/documents/cv.pdf" class="btn btn-primary" download>
+              <i class="bi bi-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="education-timeline">
+            <h3>Education & Certifications</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 - 2025</span>
+                  <h4>DIT Diploma (1 Years)</h4>
+                  <p>TechnosphereX Institute of Science and Technology</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 - 2026</span>
+                  <h4>Pre-Medical (2nd Year)</h4>
+                  <p>Knowledge School and College</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025</span>
+                  <h4>Web Development Certification</h4>
+                  <p>Certified Frontend Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Skills</span>
+        <h2 class="section-title">My <span class="text-gradient">Technical</span> Expertise</h2>
+      </div>
+      
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="skill-category" data-aos="fade-right">
+            <h3><i class="bi bi-code-slash"></i> Frontend Development</h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>CSS3 & Bootstrap</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React.js</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="skill-category" data-aos="fade-left">
+            <h3><i class="bi bi-tools"></i> Tools & Technologies</h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git & GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Responsive Design</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>UI/UX Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SEO Optimization</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-banner" data-aos="zoom-in">
+        <div class="skills-logos">
+          <div class="logo-item"><i class="bi bi-filetype-html"></i></div>
+          <div class="logo-item"><i class="bi bi-filetype-css"></i></div>
+          <div class="logo-item"><i class="bi bi-filetype-js"></i></div>
+          <div class="logo-item"><i class="bi bi-bootstrap"></i></div>
+          <div class="logo-item"><i class="bi bi-git"></i></div>
+          <div class="logo-item"><i class="bi bi-react"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Services</span>
+        <h2 class="section-title">What I <span class="text-gradient">Offer</span></h2>
+        <p class="section-description">Comprehensive web development services tailored to your needs.</p>
+      </div>
+      
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3>Website Development</h3>
+            <p>Custom website development using modern technologies and best practices for optimal performance.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-card featured">
+            <div class="featured-badge">Most Popular</div>
+            <div class="service-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first responsive designs that work seamlessly across all devices and screen sizes.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>User-centered design approach creating intuitive and engaging user interfaces and experiences.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-wrench"></i>
+            </div>
+            <h3>Website Maintenance</h3>
+            <p>Ongoing maintenance, updates, and support to keep your website running smoothly and securely.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-search"></i>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Search engine optimization to improve your website's visibility and ranking on search engines.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-speedometer2"></i>
+            </div>
+            <h3>Performance Optimization</h3>
+            <p>Optimizing website speed and performance for better user experience and higher conversion rates.</p>
+            <a href="#contact" class="service-link">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Portfolio</span>
+        <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+        <p class="section-description">Showcase of my recent web development projects.</p>
+      </div>
+      
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="*">All Projects</button>
+        <button class="filter-btn" data-filter=".web">Websites</button>
+        <button class="filter-btn" data-filter=".app">Applications</button>
+        <button class="filter-btn" data-filter=".ecommerce">E-commerce</button>
+      </div>
+      
+      <div class="row portfolio-grid">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 portfolio-item web ecommerce" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="Amazon Clone">
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <span class="portfolio-category">E-commerce</span>
+                  <h3>Amazon Clone</h3>
+                  <p>Full-featured e-commerce platform with cart and payment system</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="bi bi-eye"></i> View</a>
+                    <a href="#" class="portfolio-link"><i class="bi bi-github"></i> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&h=300&fit=crop" alt="Netflix Clone">
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <span class="portfolio-category">Streaming App</span>
+                  <h3>Netflix Clone</h3>
+                  <p>Movie streaming platform with user authentication</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="bi bi-eye"></i> View</a>
+                    <a href="#" class="portfolio-link"><i class="bi bi-github"></i> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=400&h=300&fit=crop" alt="Spotify Clone">
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <span class="portfolio-category">Music App</span>
+                  <h3>Spotify Clone</h3>
+                  <p>Music streaming application with playlist features</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="bi bi-eye"></i> View</a>
+                    <a href="#" class="portfolio-link"><i class="bi bi-github"></i> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials section" id="testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Testimonials</span>
+            <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
+            <p class="section-description">Feedback from satisfied clients and colleagues.</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="client-avatar">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face" alt="Sarah Johnson" loading="lazy">
+                                </div>
+                                <div class="client-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <span class="client-role">Marketing Director, TechCorp</span>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Amir delivered an outstanding website for our company. His attention to detail and understanding of modern web technologies exceeded our expectations. The site is fast, responsive, and perfectly aligned with our brand."</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <span class="project-type">Corporate Website</span>
+                                <span class="project-date">Completed: Dec 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card featured">
+                            <div class="testimonial-header">
+                                <div class="client-avatar">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Michael Chen" loading="lazy">
+                                </div>
+                                <div class="client-info">
+                                    <h4>Michael Chen</h4>
+                                    <span class="client-role">CEO, StartupXYZ</span>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Working with Amir was a game-changer for our startup. He transformed our vision into a beautiful, functional website that helped us secure funding. His communication was excellent throughout the project."</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <span class="project-type">Startup Platform</span>
+                                <span class="project-date">Completed: Nov 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="client-avatar">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face" alt="Emily Rodriguez" loading="lazy">
+                                </div>
+                                <div class="client-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <span class="client-role">E-commerce Manager</span>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"The e-commerce website Amir built for us increased our conversion rate by 40%. His expertise in responsive design and performance optimization made our site load quickly on all devices. Highly recommended!"</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <span class="project-type">E-commerce Store</span>
+                                <span class="project-date">Completed: Oct 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="client-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="David Wilson" loading="lazy">
+                                </div>
+                                <div class="client-info">
+                                    <h4>David Wilson</h4>
+                                    <span class="client-role">Creative Director</span>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Amir's combination of technical skills and creative thinking is impressive. He took our complex requirements and created a website that's both beautiful and highly functional. A true professional."</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <span class="project-type">Portfolio Website</span>
+                                <span class="project-date">Completed: Sep 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="testimonials-stats" data-aos="fade-up">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>4.8/5</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="testimonials-cta" data-aos="fade-up">
+            <div class="cta-content">
+                <h3>Ready to work together?</h3>
+                <p>Join my satisfied clients and let's create something amazing.</p>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Start Your Project</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Contact</span>
+        <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-description">Let's discuss your project and create something amazing together.</p>
+      </div>
+      
+      <div class="row gy-5">
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Islamabad E/11/4, Pakistan</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p>amiraofficial076@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p>+92 308 8469255</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/amir-ali-6244813a2" target="_blank" class="social-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/amiraofficial076-png" target="_blank" class="social-link">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-8" data-aos="fade-left">
+          <div class="contact-form">
+            <form id="contactForm" action="https://formspree.io/f/xkonzbod" method="POST">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                  </div>
+                </div>
+                
+                <!-- Honeypot field -->
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <div class="col-12">
+                  <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">
+                      <span>Send Message</span>
+                      <i class="bi bi-send"></i>
+                    </button>
+                    <div id="form-message" class="mt-3"></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="#" class="logo-text">A<span class="logo-dot">.</span></a>
+            <h3>Amir Ali</h3>
+            <p>Certified Web Developer</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to get updates on new projects and tips.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required>
+              <button type="submit"><i class="bi bi-send"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Amir Ali. All rights reserved.</p>
+        <p>Designed & Developed by Amir Ali</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/testimonials.js"></script>
+  <script src="assets/js/performance-optimizer.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script src="assets/js/service-worker.js"></script>
+  <script src="assets/js/tresezation1.js"></script>
+</body>
+</html>
